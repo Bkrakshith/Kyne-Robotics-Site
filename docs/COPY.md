@@ -7,14 +7,14 @@ Shared navigation and footer text is listed once at the end.
 
 ## Page: Home (`index.html`)
 
-Browser title: Kyne Robotics: off-the-shelf humanoids, trained for your floor  
-Meta description: Kyne Robotics is a robotics application company. We write the software, train the policies and integrate commercial humanoids and quadrupeds on site, starting with a simulation of your facility.
+Browser title: Kyne Robotics: humanoid deployment automation  
+Meta description: Kyne Robotics builds software that automates localised humanoid deployment. It adapts Unitree, AgiBot and other off-the-shelf humanoids to your site and trains them for the job, and our engineers install them with you.
 
-*ROBOTICS APPLICATIONS*
+*HUMANOID DEPLOYMENT AUTOMATION*
 
 ### Off-the-shelf humanoids, trained for your floor
 
-Kyne Robotics writes the software and trains the policies that turn commercial humanoids and quadrupeds into robots that do a real job. Then we install them on your site.
+Unitree, AgiBot and other accessible humanoids are being bought, but out of the box they do very little. Kyne is software that adapts each robot to your site and trains it for the job, and our engineers install it with you.
 
 [Start a programme]
 
@@ -28,9 +28,9 @@ Pause video
 
 AgiBot G2 Unitree G1 NVIDIA Isaac Sim MuJoCo ROS 2 MoveIt 2 Nav2 Genie Sim PyTorch Foxglove
 
-#### We make the humanoids and quadrupeds you can buy today do useful work in your building
+#### We make the humanoids you can buy today do useful work in your building
 
-Kyne Robotics is a robotics application company. We work on everything between a robot that walks out of its crate and a robot that earns its place on your floor.
+Kyne builds localised humanoid deployment automation: software that takes a robot from a simulated copy of your site to a tested skill on your floor, with our engineers on site for the last step.
 
 *SELECTED WORK*
 
@@ -68,7 +68,7 @@ Kyne pipeline
 
 - 05 Deploy
 
-Every project starts in simulation. We model your site, put the robot in it and collect demonstrations. We train on that data, test against the checks we will use on site, and only then bring the robot through your door.
+Every deployment starts in simulation. Our software builds a model of your site, generates the training data, trains the robot’s skills and tests them against the checks we will use on site. Only then does the robot come through your door.
 
 Our software talks to the robot through the manufacturer's own interface from day one, so the code we test in simulation is the code we install.
 
@@ -139,17 +139,17 @@ Tell us about the building and the job. We will tell you which robot could do it
 ## Page: Services (`services.html`)
 
 Browser title: Services: Kyne Robotics  
-Meta description: Application software, policy training and on-site integration for commercial humanoids and quadrupeds. Kyne Robotics takes a robot from its crate to a job on your floor.
+Meta description: Deployment software, policy training and on-site integration for off-the-shelf humanoids. Kyne Robotics takes a robot from its crate to a job on your floor.
 
 *SERVICES*
 
 ### Everything between the crate and the job
 
-Manufacturers ship capable hardware with a basic controller and an SDK. Getting that robot to pack a carton or cross a hospital ward is separate work, and it is the work we do, from the first line of task code to the day the robot runs on your floor.
+Manufacturers ship capable hardware with a basic controller and an SDK. Getting that robot to pack a carton or cross a hospital ward is separate work. Our deployment software automates most of it, and our engineers do the rest in person.
 
-#### Four services, used together or on their own
+#### Deployment software, with engineers alongside
 
-Most clients start with a simulation study and move into training and integration. If you already own a robot, we start wherever it is stuck.
+The software automates the site model, the training data, the training and the tests for each site. Our team scopes the work, integrates the robot and supports it after go-live. If you already own a robot, we start wherever it is stuck.
 
 > Waist first, then the arm. The G2 packing sequence from its own head camera, AgiBot G2 pack-off cell.
 
@@ -432,7 +432,7 @@ We flag those risks in the report and plan hardware tests for them early, so the
 
 **Q:** Do we need to have chosen a robot?
 
-No. Choosing the robot is part of the study. We work with off-the-shelf humanoids and quadrupeds from several manufacturers and compare them on your tasks.
+No. Choosing the robot is part of the study. We work with off-the-shelf humanoids from several manufacturers, including Unitree and AgiBot, and compare them on your tasks.
 
 **Q:** What do you need from us?
 
@@ -440,7 +440,7 @@ Floor plans or drawings, photos of the area, samples or specifications of the pr
 
 **Q:** Can the study lead straight into a deployment?
 
-Yes. The site model, the task software and the training data carry into the pilot. That is why we build them on the robot's real interface from the start.
+Yes. Our deployment software carries the site model, the task software and the training data straight into the pilot, all built on the robot’s real interface from the start.
 
 **Q:** What if the answer is that a humanoid is the wrong choice?
 
@@ -469,7 +469,7 @@ Meta description: One software stack from simulation to the real robot: the manu
 
 ### One stack from simulation to the real robot
 
-Every project runs on the same pipeline. The robot interface, the safety layer and the model of the site are shared between simulation and hardware, so a result in simulation means something on site.
+Our deployment software runs the same automated pipeline for every site. The robot interface, the safety layer and the model of the site are shared between simulation and hardware, so a result in simulation means something on site.
 
 *ARCHITECTURE*
 
@@ -495,7 +495,7 @@ Every input, from a teleoperator to a trained policy, asks a mode manager for co
 
 One layout file generates the photoreal scene, the physics world, the colliders for the motion planner and the maps. A map made in one simulator is correct in the other, and a change to the site is made once.
 
-*PIPELINE*
+*DEPLOYMENT AUTOMATION*
 
 #### From demonstrations to a policy that has earned its place
 
@@ -1009,23 +1009,23 @@ We can model your building, its doors and its lifts, and test a robot's routes b
 ## Page: Company (`company.html`)
 
 Browser title: Company: Kyne Robotics  
-Meta description: Kyne Robotics is a robotics application company. We make off-the-shelf humanoids and quadrupeds do useful work: application software, policy training and on-site integration.
+Meta description: Kyne Robotics builds software that automates localised humanoid deployment, with engineers who install and support it on site.
 
 *COMPANY*
 
-### We are a robotics application company
+### We build localised deployment automation for humanoids
 
-Kyne Robotics makes off-the-shelf humanoids and quadrupeds do useful work. We write the application software, train the policies and integrate the robots on site.
+Kyne Robotics makes Unitree, AgiBot and other off-the-shelf humanoids do useful work. Our software adapts each robot to a specific site and trains it for the job, and our engineers integrate it on site.
 
 *WHY KYNE EXISTS*
 
 #### Robots you can order still need someone to make them useful
 
-Humanoid and quadruped hardware is now something you can buy. What arrives is a capable machine with a walking controller and an SDK.
+Humanoid hardware is now something you can buy. What arrives is a capable machine with a walking controller and an SDK.
 
 Getting it to pack a carton at the end of a line, or to push through a fire door and wait for a lift, is a separate piece of work. It takes task software, trained policies, a safety layer and days on site with the people who run the process, and it is the piece most buyers underestimate.
 
-Kyne does that piece. We work across manufacturers, so our job is to make whichever robot fits your task work in your building.
+Kyne does that piece, and automates as much of it as possible: the site model, the training data, the training and the tests. We work across manufacturers, so whichever robot fits your task, our software makes it work in your building.
 
 *HOW WE WORK*
 
@@ -1173,7 +1173,7 @@ The page you asked for is not here. It may have moved.
 
 Kyne
 
-We make off-the-shelf humanoids and quadrupeds do useful work.
+Software that automates localised humanoid deployment.
 
 #### Services
 

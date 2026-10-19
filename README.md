@@ -2,9 +2,9 @@
 
 The website of Kyne Robotics: [kynerobotics.com](https://kynerobotics.com)
 
-Kyne Robotics makes the humanoids and quadrupeds you can buy today do useful work. We write the application
-software, train the policies and integrate the robots on site, starting with a simulation of the client's
-facility. Our reference platforms are the AgiBot G2 and the Unitree G1.
+Kyne Robotics builds software that automates localised humanoid deployment. It adapts off-the-shelf humanoids,
+such as the Unitree G1 and the AgiBot G2, to a specific site and trains them for the job, starting with a
+simulation of the client's facility. Our engineers install and support the robots on site.
 
 ## Pages
 
