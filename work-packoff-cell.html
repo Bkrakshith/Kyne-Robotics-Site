@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgiBot G2 pack-off cell: Kyne Robotics</title>
+  <meta name="description" content="Case study: an AgiBot G2 wheeled humanoid packs sealed bags into cartons at the end of a packing line, in a full simulated end-of-line cell with teleoperation, data generation and training.">
+  <meta property="og:title" content="AgiBot G2 pack-off cell: a humanoid at the end of a packing line">
+  <meta property="og:description" content="An AgiBot G2 packs sealed bags into cartons in a simulated end-of-line cell.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://kynerobotics.com/assets/media/packoff/01_packing_overview.jpg">
+  <meta property="og:url" content="https://kynerobotics.com/work-packoff-cell.html">
+  <link rel="canonical" href="https://kynerobotics.com/work-packoff-cell.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#07080d">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="work">
+<!-- @header -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-slot">
+    <nav class="nav" aria-label="Main">
+      <a class="nav__link" data-nav="services" href="services.html">Services</a>
+      <a class="nav__link" data-nav="programmes" href="programmes.html">Programmes</a>
+      <a class="nav__link" data-nav="technology" href="technology.html">Technology</a>
+      <div class="nav__item">
+        <a class="nav__link" data-nav="work" aria-current="page" href="work.html">Work <span class="dots" aria-hidden="true"></span></a>
+        <div class="nav__menu">
+          <a href="work-packoff-cell.html">AgiBot G2 pack-off cell<small>Manufacturing, end of line</small></a>
+          <a href="work-wardzero.html">WardZero<small>Healthcare, simulated hospital</small></a>
+          <a href="work.html">All work<small>Both projects and how they were built</small></a>
+        </div>
+      </div>
+      <a class="nav__link" data-nav="company" href="company.html">Company</a>
+    </nav>
+  </div>
+  <a class="brand" href="index.html" aria-label="Kyne Robotics home">
+    <svg class="brand__mark" viewBox="0 0 34 34" fill="currentColor" aria-hidden="true" focusable="false"><circle cx="3" cy="3" r="2.4"/><circle cx="10" cy="3" r="1.1" opacity="0.4"/><circle cx="17" cy="3" r="1.1" opacity="0.4"/><circle cx="24" cy="3" r="1.1" opacity="0.4"/><circle cx="31" cy="3" r="2.4"/><circle cx="3" cy="10" r="2.4"/><circle cx="10" cy="10" r="1.1" opacity="0.4"/><circle cx="17" cy="10" r="1.1" opacity="0.4"/><circle cx="24" cy="10" r="2.4"/><circle cx="31" cy="10" r="1.1" opacity="0.4"/><circle cx="3" cy="17" r="2.4"/><circle cx="10" cy="17" r="2.4"/><circle cx="17" cy="17" r="2.4"/><circle cx="24" cy="17" r="1.1" opacity="0.4"/><circle cx="31" cy="17" r="1.1" opacity="0.4"/><circle cx="3" cy="24" r="2.4"/><circle cx="10" cy="24" r="1.1" opacity="0.4"/><circle cx="17" cy="24" r="1.1" opacity="0.4"/><circle cx="24" cy="24" r="2.4"/><circle cx="31" cy="24" r="1.1" opacity="0.4"/><circle cx="3" cy="31" r="2.4"/><circle cx="10" cy="31" r="1.1" opacity="0.4"/><circle cx="17" cy="31" r="1.1" opacity="0.4"/><circle cx="24" cy="31" r="1.1" opacity="0.4"/><circle cx="31" cy="31" r="2.4"/></svg>
+    <span class="brand__word" aria-hidden="true">Kyne Robotics</span>
+  </a>
+  <div class="header-cta">
+    <a class="btn btn--accent" href="contact.html">Talk to us</a>
+    <button class="menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="mobile-menu">
+      <span class="menu-toggle__bars" aria-hidden="true"></span>Menu
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mobile-menu__top">
+    <a class="brand" href="index.html" aria-label="Kyne Robotics home">
+      <svg class="brand__mark" viewBox="0 0 34 34" fill="currentColor" aria-hidden="true" focusable="false"><circle cx="3" cy="3" r="2.4"/><circle cx="10" cy="3" r="1.1" opacity="0.4"/><circle cx="17" cy="3" r="1.1" opacity="0.4"/><circle cx="24" cy="3" r="1.1" opacity="0.4"/><circle cx="31" cy="3" r="2.4"/><circle cx="3" cy="10" r="2.4"/><circle cx="10" cy="10" r="1.1" opacity="0.4"/><circle cx="17" cy="10" r="1.1" opacity="0.4"/><circle cx="24" cy="10" r="2.4"/><circle cx="31" cy="10" r="1.1" opacity="0.4"/><circle cx="3" cy="17" r="2.4"/><circle cx="10" cy="17" r="2.4"/><circle cx="17" cy="17" r="2.4"/><circle cx="24" cy="17" r="1.1" opacity="0.4"/><circle cx="31" cy="17" r="1.1" opacity="0.4"/><circle cx="3" cy="24" r="2.4"/><circle cx="10" cy="24" r="1.1" opacity="0.4"/><circle cx="17" cy="24" r="1.1" opacity="0.4"/><circle cx="24" cy="24" r="2.4"/><circle cx="31" cy="24" r="1.1" opacity="0.4"/><circle cx="3" cy="31" r="2.4"/><circle cx="10" cy="31" r="1.1" opacity="0.4"/><circle cx="17" cy="31" r="1.1" opacity="0.4"/><circle cx="24" cy="31" r="1.1" opacity="0.4"/><circle cx="31" cy="31" r="2.4"/></svg>
+      <span class="brand__word" aria-hidden="true">Kyne Robotics</span>
+    </a>
+    <button class="mobile-menu__close" type="button" data-menu-close>Close</button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="services.html">Services</a>
+    <a href="programmes.html">Programmes</a>
+    <a href="technology.html">Technology</a>
+    <a href="work.html">Work</a>
+    <a class="sub" href="work-packoff-cell.html">AgiBot G2 pack-off cell</a>
+    <a class="sub" href="work-wardzero.html">WardZero</a>
+    <a href="company.html">Company</a>
+  </nav>
+  <a class="btn btn--accent" href="contact.html">Talk to us</a>
+</div>
+<!-- /@header -->
+
+<main id="main">
+
+  <section class="hero hero--sub" aria-labelledby="hero-title">
+    <div class="hero__media">
+      <video data-autoplay muted loop playsinline preload="auto" poster="assets/media/packoff/01_packing_overview.jpg" aria-hidden="true">
+        <source src="assets/media/packoff/01_packing_overview.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__inner">
+      <div class="wrap">
+        <div class="hero__content">
+          <p class="eyebrow eyebrow--plain eyebrow--light">Case study: manufacturing</p>
+          <h1 class="display" id="hero-title">A humanoid at the end of a packing line</h1>
+          <p class="hero__lead">An AgiBot G2 picks sealed bags of salad and crisps from a table and packs them into cartons on a conveyor. Rejects go into totes in a sort rack.</p>
+        </div>
+      </div>
+    </div>
+    <button class="hero__toggle" type="button" aria-pressed="false"><span class="dots" aria-hidden="true"></span><span data-label>Pause video</span></button>
+  </section>
+
+  <section class="section--tight" aria-label="Project facts">
+    <div class="wrap">
+      <dl class="facts">
+        <div><dt>Robot</dt><dd>AgiBot G2: wheeled base, waist, two 7-DoF arms, head RGB-D camera</dd></div>
+        <div><dt>Task</dt><dd>Pack-off of flexible, sealed bags into cartons</dd></div>
+        <div><dt>Simulator</dt><dd>AgiBot Genie Sim 3.2 on NVIDIA Isaac Sim 6.0.1</dd></div>
+        <div><dt>Stage</dt><dd>Simulation. No test on a real G2 yet</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="job-title">
+    <div class="wrap">
+      <div class="split split--top">
+        <div>
+          <p class="eyebrow">The job</p>
+          <h2 class="h2" id="job-title">A station the size of a person</h2>
+        </div>
+        <div class="prose" data-reveal>
+          <p>Pack-off is still a manual job in many fresh-produce and snack factories. A person stands at the end of the line, takes pillow packs off a table, packs them into cartons and puts rejects aside.</p>
+          <p>The bags are soft, the products change and the station is built around a person. A wheeled humanoid with two arms fits into the same footprint, which makes pack-off a natural first job for one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--wash-soft" aria-labelledby="cell-title">
+    <div class="wrap">
+      <div class="split">
+        <figure class="split__media" data-reveal>
+          <div class="media media--contain"><img src="assets/media/packoff/cell_plan.svg" alt="Top view of the U cell. The G2 starts in open floor and drives 2.0 m into the U. The pick table is on its left, the conveyor with the pack carton in front and the sort rack with two totes on its right. Cartons move from the case erector along the conveyor, over a drop gap with a floor bin, to a right-angle transfer, the case sealer and the cobot palletiser." loading="lazy"></div>
+          <figcaption><strong>Cell plan.</strong> The G2 drives into the U. Cartons flow from the case erector to the palletiser.</figcaption>
+        </figure>
+        <div class="split__body" data-reveal>
+          <p class="eyebrow">The cell</p>
+          <h2 class="h3" id="cell-title">A complete end of line, built from one generator</h2>
+          <p>We built a U-shaped cell the robot drives into: the pick table on its left, the conveyor in front and the sort rack on its right. Downstream, the line has a case erector, a drop gap with a floor bin, a right-angle transfer, a case sealer and a cobot palletiser, so the robot works inside a real line and not a bare table.</p>
+          <p>One Python generator makes the scene and the list of colliders. The motion planner and the tests use the same list, so a moved fixture is a one-line change that every check sees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="motion-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Motion</p>
+          <h2 class="h2" id="motion-title">Every move is checked before it runs</h2>
+        </div>
+        <p>The G2 turns its waist first, then moves the arm: +55° to the table, 0° to the carton, −95° to the rack. Each arm path is checked against the head camera and the fixtures over its full length, and the wheeled base holds its position on odometry while the arms move.</p>
+      </div>
+      <div class="split">
+        <figure class="split__media" data-reveal>
+          <div class="media"><img src="assets/media/packoff/packing_storyboard.jpg" alt="Four head camera frames: the G2 drives in and sees the cartons, turns its waist to the table and reaches a bag, turns to the carton, then turns to the tote in the sort rack" loading="lazy"></div>
+          <figcaption><strong>The packing sequence from the G2's head camera.</strong> Drive in, table, carton, sort rack.</figcaption>
+        </figure>
+        <figure class="split__media" data-reveal>
+          <div class="media media--cover">
+            <video data-autoplay muted loop playsinline controls preload="none" poster="assets/media/packoff/02_packing_head.jpg" aria-label="The G2 head camera during the packing take">
+              <source src="assets/media/packoff/02_packing_head.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption><strong>What the robot sees, 640 × 400.</strong> The data recorder and the training use this view.</figcaption>
+        </figure>
+      </div>
+      <div class="stat-grid mt-l">
+        <div class="stat-card" data-reveal>
+          <p class="stat-card__label">Drive-in</p>
+          <p class="stat-card__value">0.57<small>cm</small></p>
+          <p class="stat-card__desc">final position error after 2.0 m in 10.3 s, with 0.00° heading error.</p>
+        </div>
+        <div class="stat-card" data-reveal>
+          <p class="stat-card__label">Head clearance</p>
+          <p class="stat-card__value">0.20<small>m</small></p>
+          <p class="stat-card__desc">minimum distance from every arm path to the head camera. Paths that come closer are rejected.</p>
+        </div>
+        <div class="stat-card" data-reveal>
+          <p class="stat-card__label">Base hold</p>
+          <p class="stat-card__value">0.43<small>cm</small></p>
+          <p class="stat-card__desc">base drift while the arms move. Without the hold, a reach can push the base by up to 23 cm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface" aria-labelledby="data-title">
+    <div class="wrap">
+      <div class="split">
+        <div class="split__body" data-reveal>
+          <p class="eyebrow">Data and training</p>
+          <h2 class="h3" id="data-title">From teleoperation to a training run</h2>
+          <p>Operators drive the arms from a keyboard over SSH or with a SpaceMouse. A scripted generator randomises bag positions, orientation and labels inside the reachable zone, then records each episode and scores where the bag ended up.</p>
+          <p>Our pilot dataset has 20 episodes, and all 20 ended with the bag in the carton. Physics held 99.7 Hz and the head camera 30 Hz during generation, and the recorder wrote about 1.1 MB/s against 78 MB/s for the raw streams.</p>
+          <p>A first ACT-style training run on this data took the validation loss from 0.45 to 0.075 in 300 steps on a CPU. That run proves the pipeline works end to end. It is not an evaluation of a policy, and full training runs on cloud GPUs.</p>
+        </div>
+        <figure class="split__media" data-reveal>
+          <div class="media media--contain"><img src="assets/media/packoff/pilot_events.jpg" alt="Six head camera frames from one pilot episode: start, grasp, lift, transfer, place and end, with the bag in the carton at the end" loading="lazy"></div>
+          <figcaption><strong>One pilot episode:</strong> start, grasp, lift, transfer, place and end.</figcaption>
+        </figure>
+      </div>
+      <div class="grid-2 mt-l">
+        <figure data-reveal>
+          <div class="media media--cover">
+            <video data-autoplay muted loop playsinline controls preload="none" poster="assets/media/packoff/03_teleop_replay.jpg" aria-label="Kinematic replay of a recorded teleoperation episode, with the robot model, camera frames and arm joint plots">
+              <source src="assets/media/packoff/03_teleop_replay.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption><strong>A teleoperation episode, redrawn from its HDF5 file.</strong> Commanded and measured joints agree within 0.0012 rad. Recorded in the first, simpler scene.</figcaption>
+        </figure>
+        <figure data-reveal>
+          <div class="media media--contain" style="aspect-ratio:16/10;display:flex;align-items:center"><img src="assets/media/packoff/pilot_loss.png" alt="Training and validation L1 loss against steps for the pilot dataset, both falling from about 0.5 to about 0.1 over 300 steps" loading="lazy"></div>
+          <figcaption><strong>Training loss on the pilot dataset.</strong> 16 training episodes, 4 held-out validation episodes, CPU, 300 steps.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="nav-title">
+    <div class="wrap">
+      <div class="split split--flip">
+        <figure class="split__media" data-reveal>
+          <div class="media">
+            <video data-autoplay muted loop playsinline controls preload="none" poster="assets/media/packoff/04_slam_nav.jpg" aria-label="The mobile G2 drives a loop while slam_toolbox builds an occupancy map, then Nav2 drives it to a goal">
+              <source src="assets/media/packoff/04_slam_nav.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption><strong>Mapping and navigation</strong> on the first cell layout, from the two chassis lidars.</figcaption>
+        </figure>
+        <div class="split__body" data-reveal>
+          <p class="eyebrow">Mobility</p>
+          <h2 class="h3" id="nav-title">A robot that can leave the cell</h2>
+          <p>With two chassis lidars, the G2 maps the room with slam_toolbox and navigates with AMCL and Nav2. Both Nav2 goals in the test succeeded, with final errors of 0.10 m and 0.084 m. That run used the first cell layout, so the map has to be made again for the U cell.</p>
+          <p>The cell also includes an interface layer with the AgiBot GDK names, so code written for the real G2 runs on the simulated cell without changes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-label="Project status">
+    <div class="wrap wrap--narrow">
+      <div class="status-box" data-reveal>
+        <p class="status-box__label">Status</p>
+        <div>
+          <p><strong>Simulation stage.</strong> All results on this page come from simulation. No test on a real G2 is complete.</p>
+          <p>The bags are rigid placeholders, so the grasp uses an attach and release. Deformable bags and a real gripper grasp are the next steps, followed by full policy training on cloud GPUs.</p>
+        </div>
+      </div>
+      <p class="credits mt-m">Code: <a href="https://github.com/Bkrakshith/agibot-g2-humanoid-packoff-cell">agibot-g2-humanoid-packoff-cell</a>, Apache-2.0, for non-commercial use. The renders use the AgiBot G2 model and GenieSimAssets (CC BY-NC-SA 4.0), AgiBot Genie Sim (MPL 2.0) and NVIDIA Isaac Sim.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-label="Next case study">
+    <div class="wrap">
+      <a class="next-card" href="work-wardzero.html" data-reveal>
+        <div class="next-card__text">
+          <p class="eyebrow eyebrow--light">Next case study</p>
+          <h2 class="h2">WardZero: the hospital where robots train before they meet patients</h2>
+          <span class="btn btn--outline" style="align-self:flex-start">Read case study</span>
+        </div>
+        <div class="next-card__media"><img src="assets/media/wardzero/g1_corridor.jpg" alt="A Unitree G1 walking down a hospital corridor in WardZero" loading="lazy"></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section section--wash-end cta-band" aria-labelledby="cta-title">
+    <div class="wrap">
+      <h2 class="h2" id="cta-title" data-reveal>Running a manual packing station?</h2>
+      <p data-reveal>We can model your line and show what a humanoid can and cannot do at it, before you buy one.</p>
+      <div class="actions" data-reveal>
+        <a class="btn btn--accent" href="contact.html">Talk to us</a>
+        <a class="pill-link" href="programmes.html"><span class="pill-link__label">How a programme starts</span><span class="pill-link__icon"><span class="dots" aria-hidden="true"></span></span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- @footer -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__left">
+      <a class="site-footer__word" href="index.html">Kyne</a>
+      <p class="site-footer__line">We make <span class="nowrap">off-the-shelf</span> humanoids and quadrupeds do useful work.</p>
+    </div>
+    <div class="site-footer__right">
+      <div class="footer-cols">
+        <div>
+          <h2><a href="services.html">Services</a></h2>
+          <ul>
+            <li><a href="services.html#applications">Application software</a></li>
+            <li><a href="services.html#policies">Policy training</a></li>
+            <li><a href="services.html#integration">On-site integration</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2><a href="programmes.html">Programmes</a></h2>
+          <ul>
+            <li><a href="programmes.html#study">Simulation study</a></li>
+            <li><a href="programmes.html#deliverables">What you get</a></li>
+            <li><a href="programmes.html#faq">Questions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2><a href="work.html">Work</a></h2>
+          <ul>
+            <li><a href="work-packoff-cell.html">AgiBot G2 pack-off cell</a></li>
+            <li><a href="work-wardzero.html">WardZero</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2><a href="company.html">Company</a></h2>
+          <ul>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="company.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://github.com/Bkrakshith">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="site-footer__legal">Copyright &copy; 2026 Kyne Robotics. London, United Kingdom.
+        <span>Project media shows simulation renders. Third-party assets keep their own licences, listed on each case study.</span></p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+<!-- /@footer -->
+</body>
+</html>

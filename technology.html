@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technology: Kyne Robotics</title>
+  <meta name="description" content="One software stack from simulation to the real robot: the manufacturer's interface everywhere, one safety layer, one model of the site, and a training pipeline from demonstrations to gated policies.">
+  <meta property="og:title" content="Technology: Kyne Robotics">
+  <meta property="og:description" content="One software stack from simulation to the real robot.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kynerobotics.com/assets/media/home/og.jpg">
+  <meta property="og:url" content="https://kynerobotics.com/technology.html">
+  <link rel="canonical" href="https://kynerobotics.com/technology.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#07080d">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="technology">
+<!-- @header -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-slot">
+    <nav class="nav" aria-label="Main">
+      <a class="nav__link" data-nav="services" href="services.html">Services</a>
+      <a class="nav__link" data-nav="programmes" href="programmes.html">Programmes</a>
+      <a class="nav__link" data-nav="technology" aria-current="page" href="technology.html">Technology</a>
+      <div class="nav__item">
+        <a class="nav__link" data-nav="work" href="work.html">Work <span class="dots" aria-hidden="true"></span></a>
+        <div class="nav__menu">
+          <a href="work-packoff-cell.html">AgiBot G2 pack-off cell<small>Manufacturing, end of line</small></a>
+          <a href="work-wardzero.html">WardZero<small>Healthcare, simulated hospital</small></a>
+          <a href="work.html">All work<small>Both projects and how they were built</small></a>
+        </div>
+      </div>
+      <a class="nav__link" data-nav="company" href="company.html">Company</a>
+    </nav>
+  </div>
+  <a class="brand" href="index.html" aria-label="Kyne Robotics home">
+    <svg class="brand__mark" viewBox="0 0 34 34" fill="currentColor" aria-hidden="true" focusable="false"><circle cx="3" cy="3" r="2.4"/><circle cx="10" cy="3" r="1.1" opacity="0.4"/><circle cx="17" cy="3" r="1.1" opacity="0.4"/><circle cx="24" cy="3" r="1.1" opacity="0.4"/><circle cx="31" cy="3" r="2.4"/><circle cx="3" cy="10" r="2.4"/><circle cx="10" cy="10" r="1.1" opacity="0.4"/><circle cx="17" cy="10" r="1.1" opacity="0.4"/><circle cx="24" cy="10" r="2.4"/><circle cx="31" cy="10" r="1.1" opacity="0.4"/><circle cx="3" cy="17" r="2.4"/><circle cx="10" cy="17" r="2.4"/><circle cx="17" cy="17" r="2.4"/><circle cx="24" cy="17" r="1.1" opacity="0.4"/><circle cx="31" cy="17" r="1.1" opacity="0.4"/><circle cx="3" cy="24" r="2.4"/><circle cx="10" cy="24" r="1.1" opacity="0.4"/><circle cx="17" cy="24" r="1.1" opacity="0.4"/><circle cx="24" cy="24" r="2.4"/><circle cx="31" cy="24" r="1.1" opacity="0.4"/><circle cx="3" cy="31" r="2.4"/><circle cx="10" cy="31" r="1.1" opacity="0.4"/><circle cx="17" cy="31" r="1.1" opacity="0.4"/><circle cx="24" cy="31" r="1.1" opacity="0.4"/><circle cx="31" cy="31" r="2.4"/></svg>
+    <span class="brand__word" aria-hidden="true">Kyne Robotics</span>
+  </a>
+  <div class="header-cta">
+    <a class="btn btn--accent" href="contact.html">Talk to us</a>
+    <button class="menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="mobile-menu">
+      <span class="menu-toggle__bars" aria-hidden="true"></span>Menu
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mobile-menu__top">
+    <a class="brand" href="index.html" aria-label="Kyne Robotics home">
+      <svg class="brand__mark" viewBox="0 0 34 34" fill="currentColor" aria-hidden="true" focusable="false"><circle cx="3" cy="3" r="2.4"/><circle cx="10" cy="3" r="1.1" opacity="0.4"/><circle cx="17" cy="3" r="1.1" opacity="0.4"/><circle cx="24" cy="3" r="1.1" opacity="0.4"/><circle cx="31" cy="3" r="2.4"/><circle cx="3" cy="10" r="2.4"/><circle cx="10" cy="10" r="1.1" opacity="0.4"/><circle cx="17" cy="10" r="1.1" opacity="0.4"/><circle cx="24" cy="10" r="2.4"/><circle cx="31" cy="10" r="1.1" opacity="0.4"/><circle cx="3" cy="17" r="2.4"/><circle cx="10" cy="17" r="2.4"/><circle cx="17" cy="17" r="2.4"/><circle cx="24" cy="17" r="1.1" opacity="0.4"/><circle cx="31" cy="17" r="1.1" opacity="0.4"/><circle cx="3" cy="24" r="2.4"/><circle cx="10" cy="24" r="1.1" opacity="0.4"/><circle cx="17" cy="24" r="1.1" opacity="0.4"/><circle cx="24" cy="24" r="2.4"/><circle cx="31" cy="24" r="1.1" opacity="0.4"/><circle cx="3" cy="31" r="2.4"/><circle cx="10" cy="31" r="1.1" opacity="0.4"/><circle cx="17" cy="31" r="1.1" opacity="0.4"/><circle cx="24" cy="31" r="1.1" opacity="0.4"/><circle cx="31" cy="31" r="2.4"/></svg>
+      <span class="brand__word" aria-hidden="true">Kyne Robotics</span>
+    </a>
+    <button class="mobile-menu__close" type="button" data-menu-close>Close</button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="services.html">Services</a>
+    <a href="programmes.html">Programmes</a>
+    <a href="technology.html">Technology</a>
+    <a href="work.html">Work</a>
+    <a class="sub" href="work-packoff-cell.html">AgiBot G2 pack-off cell</a>
+    <a class="sub" href="work-wardzero.html">WardZero</a>
+    <a href="company.html">Company</a>
+  </nav>
+  <a class="btn btn--accent" href="contact.html">Talk to us</a>
+</div>
+<!-- /@header -->
+
+<main id="main">
+
+  <section class="hero hero--sub" aria-labelledby="hero-title">
+    <div class="hero__media"><img src="assets/media/wardzero/04_isaac_backend.jpg" alt=""></div>
+    <div class="hero__inner">
+      <div class="wrap">
+        <div class="hero__content">
+          <p class="eyebrow eyebrow--plain eyebrow--light">Technology</p>
+          <h1 class="display" id="hero-title">One stack from simulation to the real robot</h1>
+          <p class="hero__lead">Every project runs on the same pipeline. The robot interface, the safety layer and the model of the site are shared between simulation and hardware, so a result in simulation means something on site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="principles-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Architecture</p>
+          <h2 class="h2" id="principles-title">Built so nothing is rewritten for deployment</h2>
+        </div>
+        <p>The gap between simulation and a real robot is mostly software that changes on the way. We design the stack so the code you test is the code you install.</p>
+      </div>
+      <div class="grid-3">
+        <article class="info-card info-card--dark" data-reveal>
+          <p class="info-card__num">01</p>
+          <h3>One robot interface</h3>
+          <p>Our software talks to the robot through the manufacturer's interface in every environment. On the Unitree G1 the controller sends motor targets at 500 Hz and reads joint states, in MuJoCo, in Isaac Sim and on the robot. On the AgiBot G2, a simulated GDK lets GDK code run on the simulated cell unchanged.</p>
+        </article>
+        <article class="info-card info-card--dark" data-reveal>
+          <p class="info-card__num">02</p>
+          <h3>One safety layer</h3>
+          <p>Every input, from a teleoperator to a trained policy, asks a mode manager for control. A control lease, a watchdog, an emergency stop gate and speed zones decide what moves, and only one process ever sends joint commands.</p>
+        </article>
+        <article class="info-card info-card--dark" data-reveal>
+          <p class="info-card__num">03</p>
+          <h3>One model of the site</h3>
+          <p>One layout file generates the photoreal scene, the physics world, the colliders for the motion planner and the maps. A map made in one simulator is correct in the other, and a change to the site is made once.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--wash" aria-labelledby="pipeline-title">
+    <div class="wrap">
+      <div class="feature-head" data-reveal>
+        <p class="eyebrow">Pipeline</p>
+        <h2 class="h2" id="pipeline-title">From demonstrations to a policy that has earned its place</h2>
+      </div>
+      <ol class="steps steps--6">
+        <li class="step" data-reveal><span class="step__num">01 Site model</span><span class="step__title">Model the site and the robot</span><p>Generated from one layout file, with build checks for blocked doors and overlapping objects. The robot model comes from one source file for every simulator.</p></li>
+        <li class="step" data-reveal><span class="step__num">02 Demonstrate</span><span class="step__title">Show the robot the task</span><p>Teleoperation from a keyboard over SSH, a SpaceMouse or a webcam with hand tracking, with no VR headset needed. Scripted generators randomise product positions and labels for volume.</p></li>
+        <li class="step" data-reveal><span class="step__num">03 Record</span><span class="step__title">Keep every frame in sync</span><p>Head camera, depth, joint states and commands go to MCAP, then HDF5 and LeRobot-style datasets. The compressed profile records at about 1.1 MB/s, against 78 MB/s raw.</p></li>
+        <li class="step" data-reveal><span class="step__num">04 Train</span><span class="step__title">Learn the skill</span><p>Imitation learning such as ACT and behaviour cloning for manipulation. PPO in MuJoCo MJX for locomotion and whole-body control, with 2,048 robots in parallel on one GPU and a teacher-student curriculum.</p></li>
+        <li class="step" data-reveal><span class="step__num">05 Validate</span><span class="step__title">Pass the gates</span><p>Each training stage has pass gates, and validation uses whole held-out episodes. The trainer keeps the checkpoint that passes, not the last one.</p></li>
+        <li class="step" data-reveal><span class="step__num">06 Deploy</span><span class="step__title">Move to the robot</span><p>Policies export to ONNX and run inside the same controller on every backend. The ROS 2 stack, with slam_toolbox, AMCL and Nav2, moves to the robot unchanged.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-label="The pipeline in practice">
+    <div class="wrap">
+      <div class="split">
+        <figure class="split__media" data-reveal>
+          <div class="media media--cover">
+            <video data-autoplay muted loop playsinline controls preload="none" poster="assets/media/packoff/03_teleop_replay.jpg" aria-label="Kinematic replay of a recorded teleoperation episode: the robot model, the camera frames and plots of the arm joints">
+              <source src="assets/media/packoff/03_teleop_replay.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption><strong>A recorded demonstration, replayed from its data file.</strong> Commanded and measured arm joints agree within 0.0012 rad. AgiBot G2 pack-off cell.</figcaption>
+        </figure>
+        <div class="split__body" data-reveal>
+          <p class="eyebrow">Data</p>
+          <h2 class="h3">Demonstrations you can audit</h2>
+          <p>Every episode is a file you can open, replay and check. We redraw the robot from the recorded joints next to the camera frames, so a bad demonstration is caught before it reaches training.</p>
+          <p>The validation split uses complete episodes, so no frame of a validation episode leaks into the training data.</p>
+        </div>
+      </div>
+      <div class="split split--flip">
+        <figure class="split__media" data-reveal>
+          <div class="media media--cover">
+            <video data-autoplay muted loop playsinline controls preload="none" poster="assets/media/wardzero/06_mode_manager_teleop.jpg" aria-label="A humanoid in MuJoCo responds to keyboard commands through the mode manager: it stands, walks, holds and resumes">
+              <source src="assets/media/wardzero/06_mode_manager_teleop.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption><strong>The mode manager at work.</strong> In HOLD the robot ignores velocity keys, and it moves again only after an explicit resume. WardZero, ROS 2 on MuJoCo at 500 Hz.</figcaption>
+        </figure>
+        <div class="split__body" data-reveal>
+          <p class="eyebrow">Safety</p>
+          <h2 class="h3">Seven modes, one decision maker</h2>
+          <p>The robot runs in one of seven modes, from DAMP, with the motors off, to HOLD, which stops it in place. A watchdog sets HOLD if the interface signal stops, and a hardware emergency stop has priority over every input.</p>
+          <p>Speed zones on the map set the maximum speed in each area, so the robot slows near doors and in busy corridors.</p>
+        </div>
+      </div>
+      <div class="split">
+        <figure class="split__media" data-reveal>
+          <div class="media media--cover">
+            <video data-autoplay muted loop playsinline controls preload="none" poster="assets/media/wardzero/07_slam_navigation.jpg" aria-label="A map of the hospital builds up as the robot walks a long route, with the head camera view beside it">
+              <source src="assets/media/wardzero/07_slam_navigation.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption><strong>Mapping while navigating.</strong> About 5.7 hours of simulated walking through the hospital and surgical wing, shown in 27 seconds. WardZero.</figcaption>
+        </figure>
+        <div class="split__body" data-reveal>
+          <p class="eyebrow">Autonomy</p>
+          <h2 class="h3">Standard navigation, measured against ground truth</h2>
+          <p>We use standard ROS 2 packages where they are good enough, and they usually are: slam_toolbox for mapping, AMCL for localisation and Nav2 for planning. Because the simulated building is exact, we can measure the map: in WardZero, 99.6% of mapped wall cells sit within 0.10 m of the true walls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface" aria-labelledby="tools-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Toolchain</p>
+          <h2 class="h2" id="tools-title">What we build with</h2>
+        </div>
+        <p>Open, widely used tools wherever we can, so your team can maintain what we leave behind. Everything runs headless in Docker, on a workstation or on cloud GPUs.</p>
+      </div>
+      <div class="grid-4">
+        <article class="info-card info-card--white" data-reveal>
+          <p class="info-card__num">Simulation</p>
+          <ul class="checklist" style="margin-top:4px">
+            <li>NVIDIA Isaac Sim</li>
+            <li>AgiBot Genie Sim</li>
+            <li>MuJoCo and MJX</li>
+          </ul>
+        </article>
+        <article class="info-card info-card--white" data-reveal>
+          <p class="info-card__num">Robotics</p>
+          <ul class="checklist" style="margin-top:4px">
+            <li>ROS 2 Jazzy</li>
+            <li>MoveIt 2</li>
+            <li>Nav2 and slam_toolbox</li>
+          </ul>
+        </article>
+        <article class="info-card info-card--white" data-reveal>
+          <p class="info-card__num">Learning</p>
+          <ul class="checklist" style="margin-top:4px">
+            <li>PyTorch</li>
+            <li>PPO on MuJoCo MJX</li>
+            <li>ONNX for deployment</li>
+          </ul>
+        </article>
+        <article class="info-card info-card--white" data-reveal>
+          <p class="info-card__num">Data and tools</p>
+          <ul class="checklist" style="margin-top:4px">
+            <li>MCAP, HDF5, LeRobot format</li>
+            <li>Foxglove</li>
+            <li>Docker</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--wash-end cta-band" aria-labelledby="cta-title">
+    <div class="wrap">
+      <h2 class="h2" id="cta-title" data-reveal>See the pipeline on a real project</h2>
+      <p data-reveal>Both case studies show each stage, with the numbers and the limits.</p>
+      <div class="actions" data-reveal>
+        <a class="btn btn--accent" href="work.html">See our work</a>
+        <a class="pill-link" href="contact.html"><span class="pill-link__label">Talk to us</span><span class="pill-link__icon"><span class="dots" aria-hidden="true"></span></span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- @footer -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__left">
+      <a class="site-footer__word" href="index.html">Kyne</a>
+      <p class="site-footer__line">We make <span class="nowrap">off-the-shelf</span> humanoids and quadrupeds do useful work.</p>
+    </div>
+    <div class="site-footer__right">
+      <div class="footer-cols">
+        <div>
+          <h2><a href="services.html">Services</a></h2>
+          <ul>
+            <li><a href="services.html#applications">Application software</a></li>
+            <li><a href="services.html#policies">Policy training</a></li>
+            <li><a href="services.html#integration">On-site integration</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2><a href="programmes.html">Programmes</a></h2>
+          <ul>
+            <li><a href="programmes.html#study">Simulation study</a></li>
+            <li><a href="programmes.html#deliverables">What you get</a></li>
+            <li><a href="programmes.html#faq">Questions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2><a href="work.html">Work</a></h2>
+          <ul>
+            <li><a href="work-packoff-cell.html">AgiBot G2 pack-off cell</a></li>
+            <li><a href="work-wardzero.html">WardZero</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2><a href="company.html">Company</a></h2>
+          <ul>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="company.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://github.com/Bkrakshith">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="site-footer__legal">Copyright &copy; 2026 Kyne Robotics. London, United Kingdom.
+        <span>Project media shows simulation renders. Third-party assets keep their own licences, listed on each case study.</span></p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+<!-- /@footer -->
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kyne Robotics: off-the-shelf humanoids, trained for your floor</title>
+  <meta name="description" content="Kyne Robotics is a robotics application company. We write the software, train the policies and integrate commercial humanoids and quadrupeds on site, starting with a simulation of your facility.">
+  <meta property="og:title" content="Kyne Robotics">
+  <meta property="og:description" content="We make the humanoids and quadrupeds you can buy today do useful work in your building.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kynerobotics.com/assets/media/home/og.jpg">
+  <meta property="og:url" content="https://kynerobotics.com/">
+  <link rel="canonical" href="https://kynerobotics.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#07080d">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="home">
+<!-- @header -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-slot">
+    <nav class="nav" aria-label="Main">
+      <a class="nav__link" data-nav="services" href="services.html">Services</a>
+      <a class="nav__link" data-nav="programmes" href="programmes.html">Programmes</a>
+      <a class="nav__link" data-nav="technology" href="technology.html">Technology</a>
+      <div class="nav__item">
+        <a class="nav__link" data-nav="work" href="work.html">Work <span class="dots" aria-hidden="true"></span></a>
+        <div class="nav__menu">
+          <a href="work-packoff-cell.html">AgiBot G2 pack-off cell<small>Manufacturing, end of line</small></a>
+          <a href="work-wardzero.html">WardZero<small>Healthcare, simulated hospital</small></a>
+          <a href="work.html">All work<small>Both projects and how they were built</small></a>
+        </div>
+      </div>
+      <a class="nav__link" data-nav="company" href="company.html">Company</a>
+    </nav>
+  </div>
+  <a class="brand" href="index.html" aria-label="Kyne Robotics home">
+    <svg class="brand__mark" viewBox="0 0 34 34" fill="currentColor" aria-hidden="true" focusable="false"><circle cx="3" cy="3" r="2.4"/><circle cx="10" cy="3" r="1.1" opacity="0.4"/><circle cx="17" cy="3" r="1.1" opacity="0.4"/><circle cx="24" cy="3" r="1.1" opacity="0.4"/><circle cx="31" cy="3" r="2.4"/><circle cx="3" cy="10" r="2.4"/><circle cx="10" cy="10" r="1.1" opacity="0.4"/><circle cx="17" cy="10" r="1.1" opacity="0.4"/><circle cx="24" cy="10" r="2.4"/><circle cx="31" cy="10" r="1.1" opacity="0.4"/><circle cx="3" cy="17" r="2.4"/><circle cx="10" cy="17" r="2.4"/><circle cx="17" cy="17" r="2.4"/><circle cx="24" cy="17" r="1.1" opacity="0.4"/><circle cx="31" cy="17" r="1.1" opacity="0.4"/><circle cx="3" cy="24" r="2.4"/><circle cx="10" cy="24" r="1.1" opacity="0.4"/><circle cx="17" cy="24" r="1.1" opacity="0.4"/><circle cx="24" cy="24" r="2.4"/><circle cx="31" cy="24" r="1.1" opacity="0.4"/><circle cx="3" cy="31" r="2.4"/><circle cx="10" cy="31" r="1.1" opacity="0.4"/><circle cx="17" cy="31" r="1.1" opacity="0.4"/><circle cx="24" cy="31" r="1.1" opacity="0.4"/><circle cx="31" cy="31" r="2.4"/></svg>
+    <span class="brand__word" aria-hidden="true">Kyne Robotics</span>
+  </a>
+  <div class="header-cta">
+    <a class="btn btn--accent" href="contact.html">Talk to us</a>
+    <button class="menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="mobile-menu">
+      <span class="menu-toggle__bars" aria-hidden="true"></span>Menu
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mobile-menu__top">
+    <a class="brand" href="index.html" aria-label="Kyne Robotics home">
+      <svg class="brand__mark" viewBox="0 0 34 34" fill="currentColor" aria-hidden="true" focusable="false"><circle cx="3" cy="3" r="2.4"/><circle cx="10" cy="3" r="1.1" opacity="0.4"/><circle cx="17" cy="3" r="1.1" opacity="0.4"/><circle cx="24" cy="3" r="1.1" opacity="0.4"/><circle cx="31" cy="3" r="2.4"/><circle cx="3" cy="10" r="2.4"/><circle cx="10" cy="10" r="1.1" opacity="0.4"/><circle cx="17" cy="10" r="1.1" opacity="0.4"/><circle cx="24" cy="10" r="2.4"/><circle cx="31" cy="10" r="1.1" opacity="0.4"/><circle cx="3" cy="17" r="2.4"/><circle cx="10" cy="17" r="2.4"/><circle cx="17" cy="17" r="2.4"/><circle cx="24" cy="17" r="1.1" opacity="0.4"/><circle cx="31" cy="17" r="1.1" opacity="0.4"/><circle cx="3" cy="24" r="2.4"/><circle cx="10" cy="24" r="1.1" opacity="0.4"/><circle cx="17" cy="24" r="1.1" opacity="0.4"/><circle cx="24" cy="24" r="2.4"/><circle cx="31" cy="24" r="1.1" opacity="0.4"/><circle cx="3" cy="31" r="2.4"/><circle cx="10" cy="31" r="1.1" opacity="0.4"/><circle cx="17" cy="31" r="1.1" opacity="0.4"/><circle cx="24" cy="31" r="1.1" opacity="0.4"/><circle cx="31" cy="31" r="2.4"/></svg>
+      <span class="brand__word" aria-hidden="true">Kyne Robotics</span>
+    </a>
+    <button class="mobile-menu__close" type="button" data-menu-close>Close</button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="services.html">Services</a>
+    <a href="programmes.html">Programmes</a>
+    <a href="technology.html">Technology</a>
+    <a href="work.html">Work</a>
+    <a class="sub" href="work-packoff-cell.html">AgiBot G2 pack-off cell</a>
+    <a class="sub" href="work-wardzero.html">WardZero</a>
+    <a href="company.html">Company</a>
+  </nav>
+  <a class="btn btn--accent" href="contact.html">Talk to us</a>
+</div>
+<!-- /@header -->
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__media">
+      <video data-autoplay muted loop playsinline preload="auto" poster="assets/media/home/hero.jpg" aria-hidden="true">
+        <source src="assets/media/home/hero.mp4" type="video/mp4">
+        <source src="assets/media/home/hero.webm" type="video/webm">
+      </video>
+    </div>
+    <div class="hero__inner">
+      <div class="wrap">
+        <div class="hero__content">
+          <p class="eyebrow eyebrow--plain eyebrow--light">Robotics applications</p>
+          <h1 class="display" id="hero-title">Off-the-shelf humanoids, trained for your floor</h1>
+          <p class="hero__lead">Kyne Robotics writes the software and trains the policies that turn commercial humanoids and quadrupeds into robots that do a real job. Then we install them on your site.</p>
+          <div class="actions">
+            <a class="btn btn--outline" href="programmes.html">Start a programme</a>
+            <a class="btn btn--outline btn--round" href="work.html">See our work <span class="dots" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="hero__caption">Simulation: Unitree G1 in WardZero, AgiBot G2 in the pack-off cell</p>
+    <button class="hero__toggle" type="button" aria-pressed="false"><span class="dots" aria-hidden="true"></span><span data-label>Pause video</span></button>
+  </section>
+
+  <section class="section--tight" aria-labelledby="platforms-title">
+    <div class="wrap">
+      <p class="eyebrow" id="platforms-title">Platforms and tools we build on</p>
+    </div>
+    <div class="marquee">
+      <div class="marquee__track">
+        <span class="marquee__item">AgiBot <span>G2</span></span>
+        <span class="marquee__item">Unitree <span>G1</span></span>
+        <span class="marquee__item">NVIDIA <span>Isaac Sim</span></span>
+        <span class="marquee__item">MuJoCo</span>
+        <span class="marquee__item">ROS <span>2</span></span>
+        <span class="marquee__item">MoveIt <span>2</span></span>
+        <span class="marquee__item">Nav2</span>
+        <span class="marquee__item">Genie <span>Sim</span></span>
+        <span class="marquee__item">PyTorch</span>
+        <span class="marquee__item">Foxglove</span>
+        <span class="marquee__item" aria-hidden="true">AgiBot <span>G2</span></span>
+        <span class="marquee__item" aria-hidden="true">Unitree <span>G1</span></span>
+        <span class="marquee__item" aria-hidden="true">NVIDIA <span>Isaac Sim</span></span>
+        <span class="marquee__item" aria-hidden="true">MuJoCo</span>
+        <span class="marquee__item" aria-hidden="true">ROS <span>2</span></span>
+        <span class="marquee__item" aria-hidden="true">MoveIt <span>2</span></span>
+        <span class="marquee__item" aria-hidden="true">Nav2</span>
+        <span class="marquee__item" aria-hidden="true">Genie <span>Sim</span></span>
+        <span class="marquee__item" aria-hidden="true">PyTorch</span>
+        <span class="marquee__item" aria-hidden="true">Foxglove</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="statement-title">
+    <div class="wrap">
+      <div class="statement" data-reveal>
+        <h2 class="h2" id="statement-title">We make the humanoids and quadrupeds you can buy today do useful work in your building</h2>
+        <p>Kyne Robotics is a robotics application company. We work on everything between a robot that walks out of its crate and a robot that earns its place on your floor.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mt-0" style="padding-top:0" aria-labelledby="work-title">
+    <div class="wrap">
+      <p class="eyebrow" id="work-title">Selected work</p>
+      <div class="grid-3">
+        <a class="case-card" href="work-packoff-cell.html" data-reveal>
+          <div class="case-card__media"><img src="assets/media/packoff/cell_table.jpg" alt="The AgiBot G2 humanoid at the pick table of the pack-off cell, with green sealed bags on the table and open cartons on the conveyor" loading="lazy"></div>
+          <div>
+            <p class="case-card__tag">Manufacturing</p>
+            <h3 class="case-card__title">AgiBot G2 pack-off cell: a wheeled humanoid packing sealed bags into cartons at the end of a line</h3>
+            <span class="pill-link"><span class="pill-link__label">Read case study</span><span class="pill-link__icon"><span class="dots" aria-hidden="true"></span></span></span>
+          </div>
+        </a>
+        <a class="case-card" href="work-wardzero.html" data-reveal>
+          <div class="case-card__media"><img src="assets/media/wardzero/g1_corridor.jpg" alt="A Unitree G1 humanoid walking down a hospital corridor in the WardZero simulation" loading="lazy"></div>
+          <div>
+            <p class="case-card__tag">Healthcare</p>
+            <h3 class="case-card__title">WardZero: a simulated UK hospital, with fire doors and bed lifts, where a Unitree G1 trains before it meets patients</h3>
+            <span class="pill-link"><span class="pill-link__label">Read case study</span><span class="pill-link__icon"><span class="dots" aria-hidden="true"></span></span></span>
+          </div>
+        </a>
+        <a class="case-card" href="programmes.html" data-reveal>
+          <div class="case-card__media"><img src="assets/media/wardzero/03_mujoco_world.jpg" alt="A fast-physics model of a building with walls, furniture and a humanoid robot in a corridor" loading="lazy"></div>
+          <div>
+            <p class="case-card__tag">Your site</p>
+            <h3 class="case-card__title">Your facility: we build a simulated version of it and test the robot there before you buy one</h3>
+            <span class="pill-link"><span class="pill-link__label">Start a programme</span><span class="pill-link__icon"><span class="dots" aria-hidden="true"></span></span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--wash" aria-labelledby="approach-title">
+    <div class="wrap">
+      <div class="feature-head" data-reveal>
+        <h2 class="h2" id="approach-title">From a simulated copy of your site to a robot on your floor</h2>
+      </div>
+      <div class="feature">
+        <div class="feature__side">
+          <div class="feature__top">
+            <p class="eyebrow">Our approach</p>
+            <div class="dark-card dark-card--mini" data-reveal>
+              <span class="dark-card__label">Kyne pipeline</span>
+              <ol class="pipeline-mini">
+                <li class="is-on"><span>01</span>Site twin</li>
+                <li class="is-on"><span>02</span>Demonstrate</li>
+                <li class="is-on"><span>03</span>Train</li>
+                <li><span>04</span>Validate</li>
+                <li><span>05</span>Deploy</li>
+              </ol>
+            </div>
+          </div>
+          <div class="feature__text" data-reveal>
+            <p class="lead">Every project starts in simulation. We model your site, put the robot in it and collect demonstrations. We train on that data, test against the checks we will use on site, and only then bring the robot through your door.</p>
+            <p class="muted">Our software talks to the robot through the manufacturer's own interface from day one, so the code we test in simulation is the code we install.</p>
+            <a class="pill-link pill-link--lg mt-s" href="technology.html"><span class="pill-link__label">How we work</span><span class="pill-link__icon"><span class="dots" aria-hidden="true"></span></span></a>
+          </div>
+        </div>
+        <div class="dark-card dark-card--media" data-reveal>
+          <video data-autoplay muted loop playsinline preload="none" poster="assets/media/wardzero/04_isaac_backend.jpg" aria-label="The Unitree G1 walks a hospital corridor in Isaac Sim, with the head camera, the lidar scan and the leg joint data shown beside it">
+            <source src="assets/media/wardzero/04_isaac_backend.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="measured-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" id="measured-title">Measured in our projects</p>
+          <h2 class="h3">We measure what we build and we say where each number came from.</h2>
+        </div>
+        <p>These figures come from our two showcase projects. Both run in simulation today, and each case study explains how the number was measured and what has not been tested yet.</p>
+      </div>
+      <div class="stat-stage">
+        <div class="stat-stage__col stat-stage__col--left">
+          <div class="stat-card" data-reveal>
+            <p class="stat-card__label">Pilot dataset</p>
+            <p class="stat-card__value">20/20</p>
+            <p class="stat-card__desc">generated episodes ended with the bag in the carton.<span class="stat-card__src">AgiBot G2 pack-off cell</span></p>
+          </div>
+          <div class="stat-card" data-reveal>
+            <p class="stat-card__label">Drive-in accuracy</p>
+            <p class="stat-card__value">0.57<small>cm</small></p>
+            <p class="stat-card__desc">final position error after a 2.0 m drive into the cell.<span class="stat-card__src">AgiBot G2 pack-off cell</span></p>
+          </div>
+        </div>
+        <div class="stat-stage__media" data-reveal>
+          <video data-autoplay muted loop playsinline preload="none" poster="assets/media/packoff/02_packing_head.jpg" aria-label="Head camera view of the AgiBot G2 reaching over a carton with its gripper">
+            <source src="assets/media/packoff/02_packing_head.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="stat-stage__col stat-stage__col--right">
+          <div class="stat-card" data-reveal>
+            <p class="stat-card__label">Map accuracy</p>
+            <p class="stat-card__value">99.6<small>%</small></p>
+            <p class="stat-card__desc">of mapped wall cells within 0.10 m of the true walls.<span class="stat-card__src">WardZero</span></p>
+          </div>
+          <div class="stat-card" data-reveal>
+            <p class="stat-card__label">Parallel training</p>
+            <p class="stat-card__value">2,048</p>
+            <p class="stat-card__desc">simulated robots learning at once on a single RTX 3070.<span class="stat-card__src">WardZero</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="center mt-l">
+        <a class="pill-link pill-link--lg" href="work.html"><span class="pill-link__label">Read the case studies</span><span class="pill-link__icon"><span class="dots" aria-hidden="true"></span></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-labelledby="choice-title">
+    <div class="wrap">
+      <div class="collage">
+        <div class="collage__big" data-reveal><img src="assets/media/wardzero/Cam_WardCorridor.jpg" alt="A hospital ward corridor in the WardZero simulation, seen from the nurse base" loading="lazy"></div>
+        <div class="collage__small" data-reveal><img src="assets/media/wardzero/02_robot_model.jpg" alt="The Unitree G1 humanoid model with BrainCo hands, standing" loading="lazy"></div>
+        <div class="collage__text" data-reveal>
+          <h2 class="h2" id="choice-title">We pick the robot that fits the task, and we will tell you when the right answer is a conveyor.</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-labelledby="ways-title">
+    <div class="wrap">
+      <p class="eyebrow" id="ways-title">Ways to work with us</p>
+      <div class="grid-4">
+        <a class="tile" href="programmes.html" data-reveal>
+          <div class="tile__top"><span class="tile__name">Programmes</span><span class="tile__num">01</span></div>
+          <p class="tile__title">A simulation study for a new humanoid programme</p>
+          <div class="tile__media"><img src="assets/media/wardzero/wing_plan.jpg" alt="Plan view of the simulated surgical wing" loading="lazy"></div>
+        </a>
+        <a class="tile" href="services.html#policies" data-reveal>
+          <div class="tile__top"><span class="tile__name">Services</span><span class="tile__num">02</span></div>
+          <p class="tile__title">Policy training with imitation and reinforcement learning</p>
+          <div class="tile__media"><img src="assets/media/wardzero/05_gait_training.jpg" alt="Two Unitree G1 models in MuJoCo: the untrained policy has fallen, the trained policy stands" loading="lazy"></div>
+        </a>
+        <a class="tile" href="services.html#applications" data-reveal>
+          <div class="tile__top"><span class="tile__name">Services</span><span class="tile__num">03</span></div>
+          <p class="tile__title">Application software on the manufacturer's own interface</p>
+          <div class="tile__media"><img src="assets/media/packoff/packing_storyboard.jpg" alt="Four head camera frames of the G2 picking a bag and placing it over a carton" loading="lazy"></div>
+        </a>
+        <a class="tile" href="services.html#integration" data-reveal>
+          <div class="tile__top"><span class="tile__name">Services</span><span class="tile__num">04</span></div>
+          <p class="tile__title">On-site integration and commissioning, in person</p>
+          <div class="tile__media"><img src="assets/media/wardzero/Fx_MainLiftBank.jpg" alt="Two hospital bed lifts with a call button between them" loading="lazy"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--wash-end cta-band" aria-labelledby="cta-title">
+    <div class="wrap">
+      <h2 class="h2" id="cta-title" data-reveal>Thinking about humanoids for your site? Start with a simulation of it.</h2>
+      <p data-reveal>Tell us about the building and the job. We will tell you which robot could do it, what the hard parts are and how to find out for sure.</p>
+      <div class="actions" data-reveal>
+        <a class="btn btn--accent" href="contact.html">Talk to us</a>
+        <a class="pill-link" href="programmes.html"><span class="pill-link__label">How a programme starts</span><span class="pill-link__icon"><span class="dots" aria-hidden="true"></span></span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- @footer -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__left">
+      <a class="site-footer__word" href="index.html">Kyne</a>
+      <p class="site-footer__line">We make <span class="nowrap">off-the-shelf</span> humanoids and quadrupeds do useful work.</p>
+    </div>
+    <div class="site-footer__right">
+      <div class="footer-cols">
+        <div>
+          <h2><a href="services.html">Services</a></h2>
+          <ul>
+            <li><a href="services.html#applications">Application software</a></li>
+            <li><a href="services.html#policies">Policy training</a></li>
+            <li><a href="services.html#integration">On-site integration</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2><a href="programmes.html">Programmes</a></h2>
+          <ul>
+            <li><a href="programmes.html#study">Simulation study</a></li>
+            <li><a href="programmes.html#deliverables">What you get</a></li>
+            <li><a href="programmes.html#faq">Questions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2><a href="work.html">Work</a></h2>
+          <ul>
+            <li><a href="work-packoff-cell.html">AgiBot G2 pack-off cell</a></li>
+            <li><a href="work-wardzero.html">WardZero</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2><a href="company.html">Company</a></h2>
+          <ul>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="company.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://github.com/Bkrakshith">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="site-footer__legal">Copyright &copy; 2026 Kyne Robotics. London, United Kingdom.
+        <span>Project media shows simulation renders. Third-party assets keep their own licences, listed on each case study.</span></p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+<!-- /@footer -->
+</body>
+</html>
