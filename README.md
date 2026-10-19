@@ -12,7 +12,7 @@ simulation of the client's facility. Our engineers install and support the robot
 |---|---|
 | Home | `index.html` |
 | Services | `services.html` |
-| Humanoid programmes | `programmes.html` |
+| Work with us | `work-with-us.html` |
 | Technology | `technology.html` |
 | Work | `work.html` |
 | Case study: AgiBot G2 pack-off cell | `work-packoff-cell.html` |

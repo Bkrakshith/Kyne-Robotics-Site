@@ -16,7 +16,7 @@ Meta description: Kyne Robotics builds software that automates localised humanoi
 
 Unitree, AgiBot and other accessible humanoids are being bought, but out of the box they do very little. Kyne is software that adapts each robot to your site and trains it for the job, and our engineers install it with you.
 
-[Start a programme]
+[Work with us]
 
 [See our work]
 
@@ -48,9 +48,9 @@ Kyne builds localised humanoid deployment automation: software that takes a robo
 
 *YOUR SITE*
 
-##### Your facility: we build a simulated version of it and test the robot there before you buy one
+##### Your use case: work with us to build its simulation assets and test the robot before you buy one
 
-[Start a programme]
+[Work with us]
 
 #### From a simulated copy of your site to a robot on your floor
 
@@ -110,9 +110,9 @@ simulated robots learning at once on a single RTX 3070. WardZero
 
 *WAYS TO WORK WITH US*
 
-Programmes 01
+Work with us 01
 
-A simulation study for a new humanoid programme
+Simulation assets for your use case
 
 Services 02
 
@@ -132,7 +132,7 @@ Tell us about the building and the job. We will tell you which robot could do it
 
 [Talk to us]
 
-[How a programme starts]
+[Work with us]
 
 ---
 
@@ -207,13 +207,13 @@ We commission the robot against acceptance tests agreed with you before the work
 
 > A building as the robot sees it. The fast-physics version of the WardZero hospital, made from the same layout file as the photoreal scene.
 
-*04 SIMULATION STUDIES*
+*04 SIMULATION ASSETS*
 
-#### Simulation studies for new humanoid programmes
+#### Simulation assets for your use case
 
-If you are deciding whether humanoids fit your operation, we build a simulated version of your site, put candidate robots in it and run your tasks. You get reach, layout and cycle-time evidence and an architecture for the deployment before you buy hardware.
+Work with us to build the simulation assets for your use case: your site, your fixtures and products, and candidate robots running your tasks. You get reach, layout and cycle-time evidence and an architecture for the deployment before you buy hardware.
 
-[How a programme starts]
+[Work with us]
 
 *PLATFORMS*
 
@@ -285,18 +285,18 @@ Tell us what it is, where it works and what it should be doing. We will tell you
 
 ---
 
-## Page: Programmes (`programmes.html`)
+## Page: Work with us (`work-with-us.html`)
 
-Browser title: Start a humanoid programme: Kyne Robotics  
-Meta description: Before you buy a humanoid, find out what it can do in your building. Kyne Robotics builds a simulated version of your site, tests candidate robots on your tasks and architects the deployment.
+Browser title: Work with us: Kyne Robotics  
+Meta description: Work with Kyne Robotics to build the simulation assets for your humanoid use case: a model of your site, your fixtures and products, and the robot doing the job, tested before any hardware arrives.
 
-*HUMANOID PROGRAMMES*
+*WORK WITH US*
 
-### Start your humanoid programme in simulation
+### Build your use case in simulation, with us
 
-Before you buy a robot, find out what it can do in your building. We build a simulated version of your site, put candidate robots in it and run your tasks. You get evidence and an architecture before you sign a purchase order.
+Bring us a task and a site. We work with your team to build the simulation assets for your use case: a model of your building, your fixtures and products, and the robot doing the job. You see what a humanoid can do on your floor before you buy one.
 
-[Book a discovery call]
+[Talk to us]
 
 [What you get]
 
@@ -348,7 +348,7 @@ We run reach studies, cycle-time runs and navigation through your doors and lift
 
 Every run is recorded, so each number in the report links back to the run that produced it.
 
-*HOW A STUDY RUNS*
+*HOW WE WORK TOGETHER*
 
 #### Five phases from first visit to pilot plan
 
@@ -390,7 +390,7 @@ A plan for the first robot on your floor, with acceptance tests taken from the s
 
 A study ends with a clear recommendation: which robot, in which layout, doing which tasks, with the numbers behind it. Sometimes the recommendation is a different kind of automation, and we say so.
 
-- The simulated site, with your tasks set up in it
+- Simulation assets for your use case: the site, fixtures, products and tasks
 
 - Reach, clearance and cycle-time results for each candidate robot
 
@@ -450,11 +450,11 @@ Then the report says so, and says what would work better. A clear no early on is
 
 We treat them as confidential and agree terms with you before the study starts.
 
-#### Start with a discovery call
+#### Work with us on your use case
 
-A short call about your site, your tasks and what you want a robot to change. We will tell you whether a simulation study makes sense.
+Tell us the task and the site. We will tell you which simulation assets to build first and what they will show.
 
-[Book a discovery call]
+[Talk to us]
 
 [Our technology]
 
@@ -678,9 +678,9 @@ Every figure has a method behind it, and every page has a status section that li
 
 #### Your site could be the third project
 
-We build a simulated version of your facility and test the robot in it before you commit to hardware.
+Work with us to build the simulation assets for your use case and test the robot before you commit to hardware.
 
-[Start a programme]
+[Work with us]
 
 #### Want to see a project in more detail?
 
@@ -811,7 +811,7 @@ We can model your line and show what a humanoid can and cannot do at it, before 
 
 [Talk to us]
 
-[How a programme starts]
+[Work with us]
 
 ---
 
@@ -1002,7 +1002,7 @@ We can model your building, its doors and its lifts, and test a robot's routes b
 
 [Talk to us]
 
-[How a programme starts]
+[Work with us]
 
 ---
 
@@ -1096,7 +1096,7 @@ Meta description: Tell Kyne Robotics about your site and the job you want a robo
 
 ### Tell us about your site
 
-Whether you are scoping a first humanoid programme or you already have a robot that needs to do a job, start here.
+Whether you want to build simulation assets for your use case or you already have a robot that needs to do a job, start here.
 
 *ENQUIRY*
 
@@ -1144,9 +1144,9 @@ Based in London. We travel to client sites for integration work.
 
 #### Not ready to talk yet?
 
-Read how a humanoid programme starts, or look at the two projects in detail.
+Read how we work with you, or look at the two projects in detail.
 
-[Humanoid programmes]
+[Work with us]
 
 [Our work]
 
@@ -1183,9 +1183,9 @@ Software that automates localised humanoid deployment.
 
 - On-site integration
 
-#### Programmes
+#### Work with us
 
-- Simulation study
+- How it works
 
 - What you get
 

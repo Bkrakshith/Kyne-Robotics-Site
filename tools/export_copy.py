@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 PAGES = [
     ("index.html", "Home"),
     ("services.html", "Services"),
-    ("programmes.html", "Programmes"),
+    ("work-with-us.html", "Work with us"),
     ("technology.html", "Technology"),
     ("work.html", "Work"),
     ("work-packoff-cell.html", "Case study: AgiBot G2 pack-off cell"),
