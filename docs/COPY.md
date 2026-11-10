@@ -1171,8 +1171,6 @@ The page you asked for is not here. It may have moved.
 
 ## Shared footer
 
-Kyne
-
 Software that automates localised humanoid deployment.
 
 #### Services
