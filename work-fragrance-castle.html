@@ -112,7 +112,7 @@
         </div>
         <div class="prose" data-reveal>
           <p>A perfume business moves the same small boxes again and again. Master cartons arrive on pallets and are opened and shelved. Online orders are picked, packed and sealed. The boutique runs low and needs a top-up, with the tester bottles back in front of the boxes.</p>
-          <p>All of this happens in spaces built for people: racks, packing benches and shop cabinets. Humanoids fit those spaces without a rebuild. We wanted to show the whole chain on one site, with every lift and reach inside what an AgiBot G2 can really do.</p>
+          <p>All of this happens in spaces built for people: racks, packing benches and shop cabinets. Humanoids fit those spaces without a rebuild. The project shows the whole chain on one site, with every lift and reach inside what an AgiBot G2 can really do.</p>
         </div>
       </div>
     </div>
@@ -128,7 +128,7 @@
         <div class="split__body" data-reveal>
           <p class="eyebrow">The site</p>
           <h2 class="h3" id="site-title">A real building, drawn to the fire code</h2>
-          <p>We built the whole site before any robot moved: a 50 × 30 m warehouse hall with a 10 m clear height and eight rack aisles, a packing line, a mezzanine office with a glass view of the floor, and an open-sided covered linkway to a 20 × 15 m boutique.</p>
+          <p>The whole site was built before any robot moved: a 50 × 30 m warehouse hall with a 10 m clear height and eight rack aisles, a packing line, a mezzanine office with a glass view of the floor, and an open-sided covered linkway to a 20 × 15 m boutique.</p>
           <p>The layout follows Singapore building rules. The worst travel distance to an exit is 17.4 m in the hall, against a two-way limit of 40 m, and 16.4 m in the boutique, against a one-way limit of 16.7 m. One Python file holds every position, and the drawings, the scene and the tests all read it.</p>
         </div>
       </div>
@@ -166,7 +166,7 @@
         <div class="stat-card" data-reveal>
           <p class="stat-card__label">Master carton</p>
           <p class="stat-card__value">8<small>kg</small></p>
-          <p class="stat-card__desc">12 perfumes in a 32 × 32 × 42 cm carton, under the G2 limit of 10 kg with two arms. The first carton size broke the limit, so we changed it.</p>
+          <p class="stat-card__desc">12 perfumes in a 32 × 32 × 42 cm carton, under the G2 limit of 10 kg with two arms. The first carton size broke the limit, so the carton was changed.</p>
         </div>
         <div class="stat-card" data-reveal>
           <p class="stat-card__label">Shelf band</p>
@@ -186,10 +186,10 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <p class="eyebrow">How we built it</p>
+          <p class="eyebrow">How it was built</p>
           <h2 class="h2" id="pipeline-title">Every frame is checked before it renders</h2>
         </div>
-        <p>We ran the project as a systems engineering V-model: needs, requirements, a site layout, five feasibility studies, then four asset packages built in parallel. Each phase passed a gate, checked from evidence, before the next one started.</p>
+        <p>The project ran as a systems engineering V-model: needs, requirements, a site layout, five feasibility studies, then four asset packages built in parallel. Each phase passed a gate, checked from evidence, before the next one started.</p>
       </div>
       <figure data-reveal>
         <div class="media media--contain"><img src="assets/media/fragrance/architecture.svg" alt="Pipeline: design inputs feed four asset work packages and one USD stage. Each shot is baked from the world state of the previous shot, with posture IK, a solved grasp library and suction attach. A validator checks every frame. Only a shot that passes, with a matching bake hash, goes to the Isaac Sim renderer; a failed shot goes back to the bake." loading="lazy"></div>
@@ -198,8 +198,8 @@
       <div class="split mt-l">
         <div class="split__body" data-reveal>
           <h3 class="h3">A validator that learned from a review</h3>
-          <p>Our first rough cut passed the automatic checks. A review still found four defects: arms through each other, a board pushed through the wire mesh of the recycling cage, a wrist flip and a time jump in one camera angle. Voxel checks cannot see thin parts such as cardboard and wire.</p>
-          <p>We rebuilt the validator around those four cases. They are now regression tests that must fail. An exact crossing test checks thin geometry, and a shot fails for an IK error above 10 mm, a joint flip or a time splice. Motion follows a slow profile: at most 40% of joint speed and 0.05 m/s for the last 6 cm of a placement.</p>
+          <p>The first rough cut passed the automatic checks. A review still found four defects: arms through each other, a board pushed through the wire mesh of the recycling cage, a wrist flip and a time jump in one camera angle. Voxel checks cannot see thin parts such as cardboard and wire.</p>
+          <p>The validator was rebuilt around those four cases. They are now regression tests that must fail. An exact crossing test checks thin geometry, and a shot fails for an IK error above 10 mm, a joint flip or a time splice. Motion follows a slow profile: at most 40% of joint speed and 0.05 m/s for the last 6 cm of a placement.</p>
         </div>
         <div class="split__body" data-reveal>
           <h3 class="h3">Rendered overnight on one GPU</h3>

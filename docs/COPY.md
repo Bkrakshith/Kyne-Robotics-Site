@@ -1093,7 +1093,7 @@ Simulation and training run on our workstations and on cloud GPUs. Integration h
 
 Kyne is led by Rakshith Bangalore Kumaraswamy, a robotics engineer with a background in humanoid R&D. He has trained neural policies for legged control and worked on actuator identification and the sim-to-real gap on platforms such as the Unitree H1-2.
 
-He built the projects on this site, Fragrance Castle, the AgiBot G2 pack-off cell and WardZero, and hosts the Unfiltered Robotics podcast.
+He built the AgiBot G2 pack-off cell and WardZero, and hosts the Unfiltered Robotics podcast.
 
 [GitHub]
 
