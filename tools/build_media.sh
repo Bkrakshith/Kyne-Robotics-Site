@@ -7,6 +7,8 @@
 # PACKOFF       checkout of the gh-pages branch of agibot-g2-humanoid-packoff-cell (static/ with the clips)
 # PACKOFF_DOCS  docs/media of agibot-g2-humanoid-packoff-cell (storyboard, cell plan)
 # WARDZERO      checkout of the wardzero repository (static/ with the clips)
+# FRAGRANCE     folder with the Fragrance Castle film renders (s01_final.mp4 ... s16_final.mp4,
+#               g2_perfume_ops_v2.mp4) and the site plan (site_plan.png); optional, skipped if unset
 #
 # Needs ffmpeg with libx264 and python3 with Pillow.
 set -euo pipefail
@@ -84,5 +86,42 @@ crop_h = round(w * 630 / 1200)
 top = (h - crop_h) // 2
 im.crop((0, top, w, top + crop_h)).resize((1200, 630), Image.LANCZOS).save(out / "home/og.jpg", quality=82)
 PY
+
+# Fragrance Castle: the silent v2 master, a hero loop (aisle pick, sealer line, boutique) and two shot clips.
+if [ -n "${FRAGRANCE:-}" ]; then
+  F="$FRAGRANCE"; O="$OUT/fragrance"; mkdir -p "$O"
+  ffmpeg -v error -y -i "$F/g2_perfume_ops_v2.mp4" -vf scale=1280:720 "${X264[@]}" -crf 28 "$O/film.mp4"
+  ffmpeg -v error -y -ss 2 -t 5 -i "$F/s09_final.mp4" -ss 1 -t 5 -i "$F/s12_final.mp4" -ss 1 -t 7 -i "$F/s16_final.mp4" \
+    -filter_complex "\
+[0:v]scale=1280:720,fps=24,setsar=1,format=yuv420p[a];[1:v]scale=1280:720,fps=24,setsar=1,format=yuv420p[b];\
+[2:v]scale=1280:720,fps=24,setsar=1,format=yuv420p[c];[a][b]xfade=transition=fade:duration=0.8:offset=4.2[ab];\
+[ab][c]xfade=transition=fade:duration=0.8:offset=8.4,fade=t=in:st=0:d=0.5,fade=t=out:st=14.1:d=0.5[v]" \
+    -map "[v]" "${X264[@]}" -crf 27 "$O/hero.mp4"
+  ffmpeg -v error -y -ss 1 -t 8 -i "$F/s04_final.mp4" -vf scale=1280:720 "${X264[@]}" -crf 27 "$O/carton_open.mp4"
+  ffmpeg -v error -y -ss 1 -t 8 -i "$F/s15_final.mp4" -vf scale=1280:720 "${X264[@]}" -crf 27 "$O/tester.mp4"
+  for p in "film.mp4 40 film" "hero.mp4 9 hero"; do set -- $p; ffmpeg -v error -y -ss "$2" -i "$O/$1" -frames:v 1 -q:v 3 "$O/$3.jpg"; done
+  # Stills: shot, time, name. Pillow below scales them to 1600 px.
+  for p in "s01 3 site" "s03 3 carton_lift" "s04 5.5 carton_open" "s05 5.5 suction_unload" "s09 5.5 aisle_pick" \
+           "s11 5.5 order_pack" "s12 3 packing_line" "s14 5.5 linkway" "s15 5.5 tester" "s16 3 boutique"; do
+    set -- $p; ffmpeg -v error -y -ss "$2" -i "$F/${1}_final.mp4" -frames:v 1 "$O/$3.png"
+  done
+  python3 - "$O" "$F" <<'PY'
+import sys
+from pathlib import Path
+from PIL import Image
+o, f = map(Path, sys.argv[1:])
+def jpg(src, dst, width=1600, quality=82):
+    im = Image.open(src).convert("RGB")
+    if im.width > width:
+        im = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
+    im.save(dst, quality=quality, optimize=True, progressive=True)
+for png in o.glob("*.png"):
+    jpg(png, png.with_suffix(".jpg")); png.unlink()
+jpg(f / "site_plan.png", o / "site_plan.jpg", width=2000, quality=85)
+im = Image.open(o / "boutique.jpg"); w, h = im.size; ch = round(w * 630 / 1200); t = (h - ch) // 2
+im.crop((0, t, w, t + ch)).resize((1200, 630), Image.LANCZOS).save(o / "og.jpg", quality=82)
+PY
+  # architecture.svg is drawn by hand and kept in the repository.
+fi
 
 du -sh "$OUT"/*

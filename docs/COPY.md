@@ -34,6 +34,12 @@ Kyne builds localised humanoid deployment automation: software that takes a robo
 
 *SELECTED WORK*
 
+*RETAIL AND LOGISTICS*
+
+##### Fragrance Castle: two AgiBot G2s and an AMR run a perfume warehouse, an order packing line and a boutique
+
+[Read case study]
+
 *MANUFACTURING*
 
 ##### AgiBot G2 pack-off cell: a wheeled humanoid packing sealed bags into cartons at the end of a line
@@ -603,7 +609,7 @@ Open, widely used tools wherever we can, so your team can maintain what we leave
 
 #### See the pipeline on a real project
 
-Both case studies show each stage, with the numbers and the limits.
+Each case study shows each stage, with the numbers and the limits.
 
 [See our work]
 
@@ -618,9 +624,23 @@ Meta description: Two Kyne Robotics projects: an AgiBot G2 pack-off cell for an 
 
 *WORK*
 
-### Two robots, two buildings, one pipeline
+### Three sites, one way of working
 
-We built these projects to show how we work: a packing line in a factory and a hospital, with a wheeled humanoid in one and a bipedal humanoid in the other. Both are at the simulation stage, and each case study says exactly what has and has not been tested.
+We built these projects to show how we work: a perfume warehouse and boutique, a packing line in a factory and a hospital, with wheeled humanoids in two and a bipedal humanoid in the third. All are at the simulation stage, and each case study says exactly what has and has not been tested.
+
+*RETAIL AND LOGISTICS*
+
+*AGIBOT G2*
+
+*ISAAC SIM*
+
+#### Fragrance Castle
+
+Two humanoids and a mobile robot run a perfume business, from the loading dock to the boutique shelf. One G2 has five-finger hands, the other a suction tool, on a full site built to Singapore building rules.
+
+16/16 film shots through the per-frame collision gate 8 kg master carton, inside the G2 two-arm limit
+
+[Read case study]
 
 *MANUFACTURING*
 
@@ -650,7 +670,7 @@ A simulated hospital where robots train before they meet patients. It has a surg
 
 [Read case study]
 
-*WHAT THE TWO HAVE IN COMMON*
+*WHAT THE PROJECTS HAVE IN COMMON*
 
 #### The same habits on every project
 
@@ -676,7 +696,7 @@ Every figure has a method behind it, and every page has a status section that li
 
 *NEXT*
 
-#### Your site could be the third project
+#### Your site could be the next project
 
 Work with us to build the simulation assets for your use case and test the robot before you commit to hardware.
 
@@ -684,7 +704,7 @@ Work with us to build the simulation assets for your use case and test the robot
 
 #### Want to see a project in more detail?
 
-We are happy to walk you through either one, including the parts that are not finished.
+We are happy to walk you through any of them, including the parts that are not finished.
 
 [Talk to us]
 
@@ -992,7 +1012,7 @@ Code: hospital-sim and its component repositories, Apache-2.0. The renders show 
 
 *NEXT CASE STUDY*
 
-#### AgiBot G2 pack-off cell: a humanoid at the end of a packing line
+#### Fragrance Castle: humanoids from the loading dock to the boutique shelf
 
 [Read case study]
 
@@ -1073,7 +1093,7 @@ Simulation and training run on our workstations and on cloud GPUs. Integration h
 
 Kyne is led by Rakshith Bangalore Kumaraswamy, a robotics engineer with a background in humanoid R&D. He has trained neural policies for legged control and worked on actuator identification and the sim-to-real gap on platforms such as the Unitree H1-2.
 
-He built both projects on this site, the AgiBot G2 pack-off cell and WardZero, and hosts the Unfiltered Robotics podcast.
+He built the projects on this site, Fragrance Castle, the AgiBot G2 pack-off cell and WardZero, and hosts the Unfiltered Robotics podcast.
 
 [GitHub]
 
@@ -1144,7 +1164,7 @@ Based in London. We travel to client sites for integration work.
 
 #### Not ready to talk yet?
 
-Read how we work with you, or look at the two projects in detail.
+Read how we work with you, or look at our projects in detail.
 
 [Work with us]
 
@@ -1190,6 +1210,8 @@ Software that automates localised humanoid deployment.
 - Questions
 
 #### Work
+
+- Fragrance Castle
 
 - AgiBot G2 pack-off cell
 

@@ -15,6 +15,7 @@ simulation of the client's facility. Our engineers install and support the robot
 | Work with us | `work-with-us.html` |
 | Technology | `technology.html` |
 | Work | `work.html` |
+| Case study: Fragrance Castle | `work-fragrance-castle.html` |
 | Case study: AgiBot G2 pack-off cell | `work-packoff-cell.html` |
 | Case study: WardZero | `work-wardzero.html` |
 | Company | `company.html` |
@@ -47,13 +48,17 @@ The header and footer are kept in `partials/` and copied into every page with
 
 ## Credits
 
-The images and clips are simulation renders from two of our projects:
+The images and clips are simulation renders from our projects: Fragrance Castle (from the project's film renders),
 [AgiBot G2 pack-off cell](https://github.com/Bkrakshith/agibot-g2-humanoid-packoff-cell) and
 [WardZero](https://github.com/Bkrakshith/wardzero). They show third-party assets, which keep their own licences:
 
 - AgiBot G2 robot model and GenieSimAssets: CC BY-NC-SA 4.0
 - AgiBot Genie Sim: MPL 2.0
 - Lightwheel SimReady assets: CC BY-NC 4.0
+- Shadow Hand E3M5 (MuJoCo Menagerie): Apache 2.0
+- Unitree H2 and R1 descriptions: BSD 3-Clause
+- Poly Haven and ambientCG textures: CC0
+- Fragrance Castle name and logo: property of Fragrance Castle
 - NVIDIA Isaac for Healthcare assets: Apache 2.0
 - NVIDIA Isaac Sim hospital building: NVIDIA Limited Use Content
 
